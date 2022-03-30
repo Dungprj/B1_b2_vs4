@@ -25,9 +25,10 @@ function show_all(){
 }
 
 function close_all(){
-    let getElement_close_list = getElement_close("#main")
-    getElement_close_list.classList.add("close")
-    
+    let getElement_list = document.querySelectorAll(".std")
+    getElement_list.forEach((obj)=>{
+        obj.style.display = "none"
+    })
 
     
 }
