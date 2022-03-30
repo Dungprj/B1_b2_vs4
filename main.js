@@ -6,7 +6,7 @@ let getElement_input = document.querySelector("#input_main")
 
 let getElement_show_all = document.querySelector("#show_all_list")
 let getElement_close = document.querySelector("#close_btn")
-
+let getElement_close_list = getElement_close("#main")
 
 function start(){
     
@@ -25,10 +25,9 @@ function show_all(){
 }
 
 function close_all(){
-    let getElement_list = document.querySelectorAll(".std")
-    getElement_list.forEach((obj)=>{
-        obj.classList.add("close");
-    })
+    let getElement_close_list = getElement_close("#main")
+    getElement_close_list.classList.add("close")
+    
 
     
 }
