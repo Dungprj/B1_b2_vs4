@@ -6,19 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student B1,B2</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./font-awesome/all.css">
-    <!-- <link rel="stylesheet" href="style_mobile.css"> -->
-    <!-- <link rel="stylesheet" href="style_tablet.css"> -->
+    <!-- <link rel="stylesheet" href="./font-awesome/all.css"> -->
+    <link rel="stylesheet" href="style_tablet.css">
+    <link rel="stylesheet" href="style_mobile.css">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+    
 </head>
-<body>
+<body id ="main">
+    <div id = "component_icon">
+        <a id="home" href="#">
+            <i class=".icon ti-arrow-up"></i>
+        </a>
+    </div>
     <div id="nav">
+
         <button id="show_all_list"><h2>Hiện tất cả danh sách</h2></button>
-        <button id='close_btn'>Đóng</button>
+        <button id='close_btn' class="close_vs2">Đóng</button>
+        <div id="split_group">
+            <button id="btn_split">chia theo nhóm </button>
+            <div id="change">
+                <button id="search_btn">Search</button>
+                
+            </div>
+            
+        </div>
+        
     </div>
     <div id="main">
         
+        
         <div id="list">
-            <ul id="student" required>
+            <ul id="student" >
     
             </ul>
     
@@ -26,7 +44,7 @@
         <div class="main_search">
             <h2 id="title_input" style="color:rgb(236, 83, 12) !important;">Nhập mã số sinh viên của bạn</h2>
             <input id="input_main" type="text">
-            <button id="search_btn" required>Search</button>
+            <!-- <button id="search_btn" required>Search</button> -->
 
         </div>
     </div>
